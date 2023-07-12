@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1><img src="Sin título.png" alt="Título de mi web"></h1>
+    <nav>
+      <ul>
+        <li><a href="#" id="seriesBtn">Series</a></li>
+        <li><a href="#" id="peliculasBtn">Películas</a></li>
+        <li><a href="#" id="donacionesBtn">Donaciones</a></li>
+        <li><a href="#" id="homeBtn">Home</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <section id="content">
+    <h2>¡Bienvenido a nuestro sitio web de transmisión de dibujos animados retro y películas gratuitas! Aquí puedes disfrutar de contenido clásico sin interrupciones publicitarias para una experiencia ininterrumpida. Además, te ofrecemos la oportunidad de colaborar con nosotros a través de Mercado Pago, donde puedes hacer una contribución de $ 1 peso o más. Tu apoyo es fundamental para mantener nuestro servidor y continuar brindándote contenido gratuito de calidad. ¡Únete a nuestra comunidad y sé parte de esta emocionante aventura! Gracias por tu generosidad y por ser parte de nuestra comunidad.</h2>
+    <p>Descripción de inicio</p>
+
+    <div id="series" class="videos hidden">
+      <div class="portada">
+        <img src="Opera Instantánea_2023-07-11_044634_www.logoai.com.png" data-video="video_pelicula1" class="portada-imagen" onclick="mostrarVideos(this)">
+        <div class="videos hidden">
+          <video src="video_serie1.mp4" controls></video>
+          <video src="video_serie2.mp4" controls></video>
+          <video src="video_serie3.mp4" controls></video>
+        </div>
+      </div>
+
+      <div class="portada">
+        <img src="pinky.jpg" data-video="video_pelicula1" class="portada-imagen" onclick="mostrarVideos(this)">
+        <div class="videos hidden">
+          <video src="video 1.mp4" controls></video>
+          <video src="video 2.mp4" controls></video>
+          <video src="video 3.mp4" controls></video>
+          <!-- Agrega el resto de los videos aquí -->
+          <video src="Más videos.mp4" controls></video>
+        </div>
+      </div>
+
+      <div class="portada">
+        <img src="animacion_1331.webp" data-video="video_pelicula1" class="portada-imagen" >
+        <div class="videos hidden">
+          <video src="video_serie1.mp4" controls></video>
+          <video src="video_serie2.mp4" controls></video>
+          <video src="video_serie3.mp4" controls></video>
+        </div>
+      </div>
+    </div>
+    
+    <div id="peliculas" class="videos hidden">
+      <div class="portada">
+        <img src="batman.jpg" data-video="video_pelicula1.mp4" class="portada-imagen" onclick="mostrarVideos(this)">
+        <div class="videos hidden">
+          <video src="video_pelicula1.mp4" controls></video>
+          <video src="video_pelicula2.mp4" controls></video>
+          <video src="video_pelicula3.mp4" controls></video>
+        </div>
+        <div class="portada">
+          <img src="animales.jpg" data-video="video_pelicula1.mp4" class="portada-imagen" onclick="mostrarVideos(this)">
+          <div class="videos hidden">
+            <video src="video_pelicula1.mp4" controls></video>
+            <video src="video_pelicula2.mp4" controls></video>
+            <video src="video_pelicula3.mp4" controls></video>
+          </div>
+          <div class="portada">
+            <img src="mario.jpg" data-video="video_pelicula1.mp4" class="portada-imagen" onclick="mostrarVideos(this)">
+            <div class="videos hidden">
+              <video src="video_pelicula1.mp4" controls></video>
+              <video src="video_pelicula2.mp4" controls></video>
+              <video src="video_pelicula3.mp4" controls></video>
+            </div>
+      </div>
+    </div>
+    
+    <section id="donaciones" class="hidden">
+      <h2>Agradecemos tu disposición para colaborar con nuestro proyecto. Puedes hacer una contribución de 1 peso o más a través de Mercado Pago para ayudarnos a mantener el servidor y brindarte contenido gratuito de calidad. Tu apoyo es fundamental para seguir ofreciendo una experiencia de transmisión sin interrupciones. ¡Gracias por tu generosidad y por ser parte de nuestra comunidad!</h2>
+      <p>¡Tu apoyo es bienvenido! Puedes realizar una donación a través de Mercado Pago:</p>
+      <form action="https://www.mercadopago.com/checkout/donation" method="post" target="_blank">
+        <input type="hidden" name="item_title" value="Donación">
+        <input type="hidden" name="description" value="Donación a Mi Web">
+        <input type="hidden" name="amount" value="10">
+        <button type="submit">Donar</button>
+      </form>
+    </section>
+  </section>
+  
+  <footer>
+    <p>Derechos reservados &copy; 2023</p>
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+</html>

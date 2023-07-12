@@ -1,0 +1,160 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  color: black;
+}
+
+h1, h2 {
+  color: red;
+}
+
+p {
+  color: red;
+}
+
+/* Estilos para el encabezado */
+header {
+  background-color: black;
+  padding: 10px;
+}
+
+h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: red;
+  font-weight: bold;
+  padding: 10px 15px;
+  border: 05px solid green;
+  border-radius: 5px;
+  background-color: yellow;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: #e0e0e0;
+}
+
+nav a:hover {
+  color: green;
+}
+
+/* Estilos para el contenido */
+#content {
+  margin: 20px;
+}
+
+.videos {
+  margin-top: 20px;
+}
+
+.portada {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.portada-imagen {
+  width: 150px;
+  height: auto;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.video-portada {
+  width: 100%;
+  height: auto;
+}
+
+/* Estilos para la sección de donaciones */
+#donaciones {
+  margin-top: 20px;
+}
+
+button {
+  background-color: #f00;
+  color: black;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ff4d4d;
+}
+
+/* Estilos para el pie de página */
+footer {
+  background-color: black;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Estilos para el video */
+video {
+  width: 15%;
+  height: auto;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
+
+.video-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
+
+header img {
+  width: 100%;
+  max-height: 200px;
+}
+
+.portada {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.portada-imagen {
+  cursor: pointer;
+  cursor: pointer;
+  
+}
+
+.videos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.hidden {
+  display: none;
+}
